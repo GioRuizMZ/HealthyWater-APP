@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Inicio">
+
+    <fragment
+        android:id="@+id/nav_Inicio"
+        android:name="com.tonala.healthywather.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_Inicio_to_nav_Configuracion"
+            app:destination="@id/nav_Configuracion" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Configuracion"
+        android:name="com.tonala.healthywather.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_Configuracion_to_nav_Servicios"
+            app:destination="@id/nav_Servicios" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Servicios"
+        android:name="com.tonala.healthywather.ui.servicios.ServiciosFragment"
+        android:label="@string/menu_servicios"
+        tools:layout="@layout/fragment_servicios" >
+        <action
+            android:id="@+id/action_nav_Servicios_to_nav_Acercade"
+            app:destination="@id/nav_Acercade" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Acercade"
+        android:name="com.tonala.healthywather.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

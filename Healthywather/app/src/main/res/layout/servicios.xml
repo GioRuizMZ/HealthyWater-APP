@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_elemento"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_min_servicios"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="center"
+        app:srcCompat="@drawable/linea_redonda" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="¿QUE NECESITAS?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_sanitizar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="SERVICIO DE SANITIZADO                    >"
+        android:textAlignment="textStart"
+        android:textColor="@color/boton"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_recomendaciones"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="RECOMENDACIONES DE LIMPIEZA     >"
+        android:textAlignment="textStart"
+        android:textColor="@color/boton"
+        android:textSize="16sp" />
+</LinearLayout>

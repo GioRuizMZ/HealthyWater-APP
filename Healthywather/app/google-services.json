@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "12821851817",
+    "firebase_url": "https://healthy-water-database-default-rtdb.firebaseio.com",
+    "project_id": "healthy-water-database",
+    "storage_bucket": "healthy-water-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12821851817:android:771168aeb54dcf5d97c3b8",
+        "android_client_info": {
+          "package_name": "com.tonala.healthywather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12821851817-ggvkhh5dkma99pbeq8fihv6g9pjqvs7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tonala.healthywather",
+            "certificate_hash": "5ebd21eed44525336e004f99e5493ebc1094d558"
+          }
+        },
+        {
+          "client_id": "12821851817-aiqannu53p8bb3lqgeu7t1g4abol0rs8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApBSKJtW_RUgF1mp8d4IaRobcFlkqAKTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12821851817-00gnmfcpu4f4q886pu878hs27m3kb1dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

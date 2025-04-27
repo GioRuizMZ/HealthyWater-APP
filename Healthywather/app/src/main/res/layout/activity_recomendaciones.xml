@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_titulo_rec"
+            android:layout_width="340dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Recomendaciones para limpieza del agua"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="7dp">
+
+            <TextView
+                android:id="@+id/txt_subtitlo"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="- Para uso en laboratorios:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_subtitlo_lab"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/poppins"
+                android:text="Cuando el pH, el ppm o la turbidez del agua son altos, es importante tomar medidas para limpiar y purificar el agua. tenemos algunas recomendaciones para ti:
+    \n \nAjuste del PH: Si el pH es alto o bajo, puedes utilizar productos químicos como ácido clorhídrico (para bajar el pH) o carbonato de sodio (para aumentarlo) siguiendo las instrucciones del fabricante. Es importante hacerlo de forma gradual y usando equipos de protección adecuados.
+    \n \nReducción de sólidos disueltos: Si los ppm (partes por millón) de sólidos disueltos son altos, puedes considerar el uso de filtros de ósmosis inversa u otros sistemas de filtración avanzados para reducir los sólidos disueltos.
+    \n \nReducción de turbidez: La turbidez del agua se puede reducir utilizando sistemas de filtración adecuados, como filtros de sedimentos o filtros de carbono activado. También es importante tratar la fuente de la turbidez, que puede ser causada por partículas en suspensión o materia orgánica.
+    \n \nDesinfección: Después de ajustar el pH y reducir los ppm y la turbidez, es importante desinfectar el agua para eliminar cualquier bacteria u organismos patógenos. Puedes utilizar cloro, yodo o sistemas de desinfección UV siguiendo las instrucciones del fabricante.
+    \n \nMonitoreo continuo: Después de realizar los ajustes y la limpieza, es importante monitorear regularmente el pH, los ppm y la turbidez del agua para asegurarse de que se mantengan en niveles seguros y adecuados para su uso.
+    \n \nRecuerda que es fundamental seguir las instrucciones del fabricante de los productos químicos y de los sistemas de filtración, así como tomar medidas de seguridad adecuadas durante el proceso de limpieza y purificación del agua."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="7dp">
+            <TextView
+                android:id="@+id/txt_subtitlo_2"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="- Para uso personal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_subtitlo_casa"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/poppins"
+                android:text="Para limpiar el agua en uso doméstico, especialmente en casa y albercas, tenemos algunas recomendaciones para ti:
+
+    \n \nFiltración: Utiliza sistemas de filtración de agua adecuados para eliminar partículas y sedimentos. Puedes optar por filtros de cartucho, filtros de arena o filtros de diatomeas, según el tamaño y tipo de contaminantes presentes en el agua.
+    \n \nCloración: Para desinfectar el agua y eliminar bacterias, virus y algas, puedes utilizar cloro. Puedes optar por cloro líquido, tabletas de cloro o generadores de cloro. Asegúrate de mantener los niveles de cloro dentro de los rangos recomendados.
+    \n \nEquilibrio químico: Mantén el equilibrio químico del agua, especialmente el pH y los niveles de alcalinidad y dureza. Esto ayudará a prevenir problemas como la corrosión, la formación de incrustaciones y la irritación de la piel y los ojos.
+    \n \nCobertura: Cubre tu alberca cuando no esté en uso para evitar la contaminación por hojas, insectos y otros desechos. Esto también ayudará a reducir la evaporación del agua y a mantenerla más limpia.
+    \n \nMantenimiento regular: Realiza un mantenimiento regular del sistema de filtración y desinfección, incluyendo la limpieza de los filtros y la revisión de los niveles de químicos. También es importante limpiar periódicamente las paredes y el fondo de la alberca para evitar la acumulación de suciedad y algas.
+    \n \nEvitar contaminantes: Evita verter productos químicos, aceites, cosméticos u otros contaminantes en la alberca o en el sistema de agua potable. Estos pueden afectar la calidad del agua y requerir un tratamiento adicional.
+    \n \nPruebas regulares: Realiza pruebas regulares del agua para monitorear los niveles de cloro, pH, alcalinidad, dureza y otros parámetros importantes. Esto te ayudará a mantener el agua limpia y segura para su uso.
+    \n \nEs importante seguir las recomendaciones del fabricante de los productos químicos y equipos de limpieza, y mantener un registro de las pruebas y tratamientos realizados en el agua."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

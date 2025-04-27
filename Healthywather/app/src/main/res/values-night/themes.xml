@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/fondo_mensaje</item>
+    </style>
+    <style name="Base.Theme.HealthyWather" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#62D8D4</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <!-- Nuevo estilo para la actividad principal sin pantalla completa -->
+    <style name="Theme.HealthyWather.NoStatusBar" parent="Base.Theme.HealthyWather">
+
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="Mennu_theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="Theme.HealthyWather" parent="Base.Theme.HealthyWather">
+    </style>
+    <style name="Theme.HealthyWather.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.HealthyWather.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.HealthyWather.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CircularImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
+    </style>
+    <style name="circularShape">
+        <item name="shapeAppearanceOverlay">@style/CircularImageViewStyle</item>
+    </style>
+
+    <style name="Calendario" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:windowBackground">@drawable/fondo_mensaje</item>
+        <item name="colorAccent">@color/colorclaro</item>
+    </style>
+</resources>

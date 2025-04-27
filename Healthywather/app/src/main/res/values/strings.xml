@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Healthy wather</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">¡BIENVENIDO!</string>
+    <string name="nav_header_subtitle">android.studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Reportar bugs</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Configuracion</string>
+    <string name="menu_servicios">Servicios</string>
+    <string name="menu_slideshow">Acerca de</string>
+    <string name="title_activity_menuu">Menuu</string>
+    <string name="default_web_client_id">12821851817-aiqannu53p8bb3lqgeu7t1g4abol0rs8.apps.googleusercontent.com</string>
+    <string name="menu_CerrarSesion">Cerrar Sesion</string>
+    <string name="title_activity_mennu_admin">MennuAdmin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="default_notification_channel_id">Contaminacion</string>
+</resources>

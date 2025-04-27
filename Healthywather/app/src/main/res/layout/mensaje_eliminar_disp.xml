@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_aceptar_eliminar_disp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#4CAF50"
+        android:visibility="gone"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifiacion_msg_eliminar">
+
+        <Button
+            android:id="@+id/btn_aceptar_eliminar_disp"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#4CAF50"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Aceptar"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/colorclaro"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_si_eliminar"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="108dp"
+            android:backgroundTint="@color/colorclaro"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Eliminar"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/notifiacion_msg_eliminar"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/poppins"
+        android:text="Se eliminara este Healthywater en este dispositivo"
+        android:textAlignment="center"
+        android:textColor="@color/boton"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_mensaje_accion"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:text="¿Estas seguro de eliminar este Healthywater?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_eliminar_disp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mensaje_accion"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/correctlottie" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_noregresar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/colorclaro"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/card_eliminar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_no_regresar"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorclaro"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Regresar"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

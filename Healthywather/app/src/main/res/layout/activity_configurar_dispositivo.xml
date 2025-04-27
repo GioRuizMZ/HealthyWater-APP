@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".Activities.DeviceSettings">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_reintentar_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="@color/colorclaro"
+        android:visibility="gone"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <Button
+            android:id="@+id/btn_reintentar_scan"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/colorclaro"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins"
+            android:text="Reintentar"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_cancelarescaneo"
+        android:layout_width="288dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Se cancelo el escaneo del QR"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <ImageButton
+        android:id="@+id/btn_back_config_disp"
+        android:layout_width="66dp"
+        android:layout_height="89dp"
+        android:layout_above="@+id/crear_nombre_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="288dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Cofiguremos el dispositivo"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/opciones"
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenida">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_btn_Codigo"
+            android:layout_width="358dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorclaro"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_btn_bt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.686"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_Codigo"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="108dp"
+                android:backgroundTint="@color/colorclaro"
+                android:elevation="3dp"
+                android:fontFamily="@font/poppins"
+                android:text="Conexion por codigo                             >"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_btn_bt"
+            android:layout_width="358dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorclaro"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_btn_wf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.686"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_qr_bt"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="108dp"
+                android:backgroundTint="@color/colorclaro"
+                android:elevation="3dp"
+                android:fontFamily="@font/poppins"
+                android:text="Configuracion local                              >"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_btn_wf"
+            android:layout_width="358dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorclaro"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.686"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_qr_wf"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="108dp"
+                android:backgroundTint="@color/colorclaro"
+                android:elevation="3dp"
+                android:fontFamily="@font/poppins"
+                android:text="Configuracion Wifi                                 >"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="301dp"
+            android:layout_height="380dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/configurar_disp_fondo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conectando"
+        android:layout_width="409dp"
+        android:layout_height="598dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_reintentar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/colorclaro"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+            <Button
+                android:id="@+id/btn_reintentar"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/colorclaro"
+                android:elevation="3dp"
+                android:fontFamily="@font/poppins"
+                android:text="Reintentar"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadinganim"
+            android:layout_width="108dp"
+            android:layout_height="93dp"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.495"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/conectando_anim" />
+
+        <TextView
+            android:id="@+id/txt_escaneo"
+            android:layout_width="331dp"
+            android:layout_height="103dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Conectando a tu Healtywather®..."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="410dp"
+            android:layout_height="323dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_escaneo"
+            app:srcCompat="@drawable/conexion_user_hw" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/okanim"
+            android:layout_width="109dp"
+            android:layout_height="106dp"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.495"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/correctlottie" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/erroranim"
+            android:layout_width="109dp"
+            android:layout_height="106dp"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_escaneo"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/errorlottie" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

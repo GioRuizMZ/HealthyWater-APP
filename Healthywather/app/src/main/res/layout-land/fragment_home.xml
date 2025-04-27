@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mas_info"
+        android:layout_width="173dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/layout_elementos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33">
+
+        <TextView
+            android:id="@+id/txt_masinfo"
+            android:layout_width="135dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="105dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="   Mas sobre     Healthywater®"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_masinfo"
+            android:layout_width="131dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logosinletras" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/texto_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="¿Necesitas ayuda?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fab_ayuda"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mas_info"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_elementos"
+        android:layout_width="319dp"
+        android:layout_height="217dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiempo_saludo"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="¡Agrega uno!"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Ningun dispositivo configurado"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_agregardisp"
+            android:layout_width="109dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="75dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/agregar" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/fondo_view"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tiempo_saludo"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/poppins"
+        android:text="¡BUENAS NOCHES!"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_ayuda"
+        android:layout_width="189dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#000000"
+        android:clickable="true"
+        android:src="@drawable/acercade_icon"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tarjeta_compras"
+        android:layout_width="173dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/layout_elementos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33">
+
+        <TextView
+            android:id="@+id/txt_comprar"
+            android:layout_width="164dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="128dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="¡Comprar ahora!"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_Comprar"
+            android:layout_width="134dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/comprar" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

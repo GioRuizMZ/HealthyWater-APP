@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Inicio"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_Configuracion"
+            android:icon="@drawable/config_icon"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_Servicios"
+            android:icon="@drawable/servicios"
+            android:title="@string/menu_servicios" />
+        <item
+            android:id="@+id/nav_Acercade"
+            android:icon="@drawable/acercade_icon"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_Cerrars"
+            android:icon="@drawable/salir"
+            android:title="@string/menu_CerrarSesion" />
+    </group>
+</menu>
